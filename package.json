@@ -1,0 +1,24 @@
+{
+  "name": "project-code_louisville_color_analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caprena1/color_analysis_season.git"
+  },
+  "keywords": [],
+  "author": "Caprena Richie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caprena1/color_analysis_season/issues"
+  },
+  "homepage": "https://github.com/Caprena1/color_analysis_season#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
