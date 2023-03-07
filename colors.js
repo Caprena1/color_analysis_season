@@ -23,8 +23,9 @@ app.get('/quiz', (req, res) => {
 })
 
 app.post('/seasons', (req, res) => {  
-    console.log(req.body);  //the data we get is in the body of request
+    console.log(req.submitForm) //the data we get is in the body of request
 
+    res.render('seasons.html', submitForm)       
 })
 // app.listen(3000)
 app.listen(process.env.PORT || 3000, () => {console.log('running on 3000')})
