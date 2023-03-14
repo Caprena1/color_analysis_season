@@ -1,0 +1,1 @@
+const results = document.getElementById("seasonResult").textContent.getItem("textvalue");
