@@ -30,16 +30,27 @@
     skintone: "cool"
 };
   */
+
+const obj = {
+    hair1: false,
+    hair2: false,
+    hair3: false,
+
+}
 const button = document.getElementById('submitBtn')
-
-
-button.onclick = function seasonResult() {
-   /*  const form = document.getElementById('form'); */
+const hair1= document.getElementById('hair1');
+function changeHair() {
+    hair1 ? console.log(true) : console.log(false);
+ }
+ button.addEventListener('click', changeHair)
+/* button.onclick = function seasonResult() {
+    const form = document.getElementById('form'); 
     const hair1= document.getElementById('hair1');
     const hair2 = document.getElementById('hair2');
-    const hair3 = document.getElementById('hair3'); 
+    const hair3 = document.getElementById('hair3');  
  
-    if(hair1.checked === true) {
+
+    if(obj.hair1 === true) {
         alert("Your season is: SPRING");  
     } else if 
     (hair2.checked === true) {
