@@ -86,28 +86,17 @@ input, label {
 
 
 article {
-    
     width:75%;
     padding: .5em;
 }
 
-section {
+form {
     display: flex;
     flex-direction: row;
-    margin-top: 75px;
-    
-}
-
-.container1 {
-    width: 50%;
-    height: 100vh;
-    margin-left: 35%;
-}
-.container2 {
-    width: 50%;
-    height: 100vh;
-    margin-left: 10%;
-   
+    justify-content: space-between;
+    flex: 2;
+    margin-top: 3rem;
+    margin-left: 40%;
 }
 
 .button {
@@ -125,60 +114,30 @@ footer {
     background-color: olive;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     
     main {
         display:flex;
         flex-direction: column;
-    }
-    /* section {
-        display: flex;
-        flex-direction: column;  
-    } */
-
-
-    /* .container1 {
-        margin-left: 2%;
+        flex: 1;
+        
     }
 
-    .columns-desktop {
-        display: flex;
-    } */
-}
+    h1 {
+        margin-top: 2rem;
+    }
 
-.color {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #fff;
-    border: solid 1px #ccc;
-}
+    input, label {
+        margin-bottom: 1rem;
+    }
 
-.color img {
-    width: 100%;
+    form {
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+       
+    }
+ 
 }
-
-.color .title {
-    font-weight: bold;
-}
-
-.color .columns {
-    width:100%;
-}
-.color .price {
-    text-align: right;
-}
-.color .columns div {
-    width: 50%;
-}
-
-.color button {
-    background-color: #f6aeae;
-    padding: 10px;
-    border: solid 1px #f6aeae;
-    border-radius: 3px;
-    color: #fff;
-}
-    
 

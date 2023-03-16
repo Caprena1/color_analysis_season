@@ -140,21 +140,75 @@ function handleChange(e, boxChecked) {
  //FUNCTION TO DETERMINE COLORS
  function checkAnswers() {
     if (
-      quizResult.hair === 'hair1' &&
+      quizResult.hair === 'blonde' &&
+      quizResult.hairtone === 'cool' &&
+      quizResult.tan === 'no' &&
+      quizResult.palms === 'pink' &&
+      quizResult.eyes === 'lightblue' &&
+      quizResult.jewelry === 'silver' &&
+      quizResult.sunburn === 'yes' &&
+      quizResult.veins === 'blue_purple' &&
+      quizResult.gemstone === 'light_green_emerald' &&
+      quizResult.eyelashes === 'lightblonde' &&
+      quizResult.inside_lip === 'pinkish' &&
+      quizResult.cheeks === 'rosypink' &&
+      quizResult.skintone === 'cool' 
+    ); {
+      alert('You are a SUMMER. Pastels look great on you!');
+    }
+    
+    if (
+      quizResult.hair === 'auburn' &&
+      quizResult.hairtone === 'warm' &&
+      quizResult.tan === 'no' &&
+      quizResult.palms === 'pink' &&
+      quizResult.eyes === 'darkgreen' &&
+      quizResult.jewelry === 'gold' &&
+      quizResult.sunburn === 'yes' &&
+      quizResult.veins === 'greenish' &&
+      quizResult.gemstone === 'sapphire' &&
+      quizResult.eyelashes === 'lightbrown' &&
+      quizResult.inside_lip === 'pinkish' &&
+      quizResult.cheeks === 'rosypink' &&
+      quizResult.skintone === 'warm' 
+    ); {
+      alert('You are an AUTUMN. Fall and Earthtone colors look great on you!');
+    }
+
+    if (
+      quizResult.hair === 'auburn' &&
       quizResult.hairtone === 'warm' &&
       quizResult.tan === 'yes' &&
-      quizResult.palms === 'yes' &&
-      quizResult.eyes === 'yes' &&
-      quizResult.jewelry === 'yes' &&
+      quizResult.palms === 'peach' &&
+      quizResult.eyes === 'lightblue' &&
+      quizResult.jewelry === 'gold' &&
       quizResult.sunburn === 'yes' &&
-      quizResult.veins === 'yes' &&
-      quizResult.gemstone === 'yes' &&
-      quizResult.eyelashes === 'yes' &&
-      quizResult.inside_lip === 'yes' &&
-      quizResult.cheeks === 'yes' &&
-      quizResult.skintone === 'yes' 
+      quizResult.veins === 'greenish' &&
+      quizResult.gemstone === 'blue_topaz' &&
+      quizResult.eyelashes === 'lightbrown' &&
+      quizResult.inside_lip === 'pinkish' &&
+      quizResult.cheeks === 'rosypink' &&
+      quizResult.skintone === 'cool' 
     ); {
-      alert('You are summer');
+      alert('You are a SPRING! Your wardrobe should be full of warm and bright colors.');
+    }
+
+    if (
+      quizResult.hair === 'black' &&
+      quizResult.hairtone === 'cool' &&
+      quizResult.tan === 'yes' &&
+      quizResult.palms === 'peach' &&
+      quizResult.eyes === 'deepbrown' &&
+      quizResult.jewelry === 'gold' &&
+      quizResult.sunburn === 'no' &&
+      quizResult.veins === 'greenish' &&
+      quizResult.gemstone === 'ruby' &&
+      quizResult.eyelashes === 'black' &&
+      quizResult.inside_lip === 'pinkish' &&
+      quizResult.cheeks === 'rosypink' &&
+      quizResult.skintone === 'cool' 
+    ); {
+      alert('You are a WINTER! You look great in bright, bold, jewel-tone colors. ');
     }
   }
   
