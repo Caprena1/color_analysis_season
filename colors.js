@@ -153,11 +153,9 @@ function handleChange(e, boxChecked) {
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'cool' 
-    ); {
+    ) {
       alert('You are a SUMMER. Pastels look great on you!');
-    }
-    
-    if (
+    } else if (
       quizResult.hair === 'auburn' &&
       quizResult.hairtone === 'warm' &&
       quizResult.tan === 'no' &&
@@ -171,11 +169,9 @@ function handleChange(e, boxChecked) {
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'warm' 
-    ); {
+    ) {
       alert('You are an AUTUMN. Fall and Earthtone colors look great on you!');
-    }
-
-    if (
+    } else if (
       quizResult.hair === 'auburn' &&
       quizResult.hairtone === 'warm' &&
       quizResult.tan === 'yes' &&
@@ -189,11 +185,9 @@ function handleChange(e, boxChecked) {
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'cool' 
-    ); {
+    ) {
       alert('You are a SPRING! Your wardrobe should be full of warm and bright colors.');
-    }
-
-    if (
+    } else {
       quizResult.hair === 'black' &&
       quizResult.hairtone === 'cool' &&
       quizResult.tan === 'yes' &&
@@ -207,10 +201,12 @@ function handleChange(e, boxChecked) {
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'cool' 
-    ); {
+    } {
       alert('You are a WINTER! You look great in bright, bold, jewel-tone colors. ');
     }
-  }
+  };
+
+  submitButton.addEventListener('click', checkAnswers)
   
 
 
