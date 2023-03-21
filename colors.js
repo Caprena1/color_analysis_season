@@ -152,7 +152,7 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
     ) {
-      alert(`Hello ${name}! You are a SUMMER. Pastels look great on you!`);
+      alert(`Hello ${name}! You are a SUMMER. Pastels look great on you!🌸`);
       } else if (
       quizResult.hair === 'hairauburn' &&
       quizResult.hairtone === 'hairwarm' &&
@@ -200,7 +200,7 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
      )  {
-      alert(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.`);
+      alert(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.🟣 🔵 🔴 🟢`);
     } else {
         alert('Your season is inconclusive-try again.')
     }
