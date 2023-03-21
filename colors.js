@@ -1,22 +1,22 @@
 //INPUTS
 const submitButton = document.getElementById('submitBtn');
-const hairBlonde = document.getElementById('blonde');
-const hairAuburn = document.getElementById('auburn');
-const hairBlack = document.getElementById('black');  
-const hairToneWarm = document.getElementById('warm');  
-const hairToneCool = document.getElementById('cool');  
-const tanYes = document.getElementById('yes');  
-const tanNo = document.getElementById('no');  
-const palmsPeach = document.getElementById('peach');  
-const palmsPink = document.getElementById('pink');  
+const hairBlonde = document.getElementById('hairblonde');
+const hairAuburn = document.getElementById('hairauburn');
+const hairBlack = document.getElementById('hairblack');  
+const hairToneWarm = document.getElementById('hairwarm');  
+const hairToneCool = document.getElementById('haircool');  
+const tanYes = document.getElementById('tanyes');  
+const tanNo = document.getElementById('tanno');  
+const palmsPeach = document.getElementById('palmspeach');  
+const palmsPink = document.getElementById('palmspink');  
 const eyesHazel = document.getElementById('hazel');  
 const eyesLightblue = document.getElementById('lightblue');  
 const eyesDarkgreen = document.getElementById('darkgreen');  
 const eyesDeepbrown = document.getElementById('deepbrown');  
 const jewelryGold = document.getElementById('gold')
 const jewelrySilver = document.getElementById('silver')
-const sunburnYes = document.getElementById('yes')
-const sunburnNo = document.getElementById('no')
+const sunburnYes = document.getElementById('sunburnyes')
+const sunburnNo = document.getElementById('sunburnno')
 const veinsGreen = document.getElementById('greenish')
 const veinsBluePurple = document.getElementById('blue_purple')
 const gemstoneEmerald = document.getElementById('light_green_emerald')
@@ -26,14 +26,14 @@ const gemstoneSapphire = document.getElementById('sapphire')
 const lashesBlonde = document.getElementById('lightblonde')
 const lashesLbrown = document.getElementById('lightbrown')
 const lashesDbrown = document.getElementById('darkbrown')
-const lashesBlack = document.getElementById('black')
-const lipPeachy = document.getElementById('peachy')
-const lipPink = document.getElementById('peach')
-const cheekPeach = document.getElementById('pinkish')
+const lashesBlack = document.getElementById('lashesblack')
+const lipPeachy = document.getElementById('lippeachy')
+const lipPink = document.getElementById('pinkish')
+const cheekPeach = document.getElementById('peach')
 const cheekPink = document.getElementById('rosypink')
 const cheekNoColor = document.getElementById('nocolor')
-const skintoneWarm = document.getElementById('warm')
-const skintoneCool = document.getElementById('cool')
+const skintoneWarm = document.getElementById('skinwarm')
+const skintoneCool = document.getElementById('skincool')
 
 
 const quizResult = {
@@ -75,10 +75,7 @@ function handleChange(e, boxChecked) {
         console.log(quizResult);  
     } else if(boxChecked === 'sunburn') {
         quizResult['sunburn'] = e.target.value;
-        console.log(quizResult);  
-    } else if(boxChecked === 'hair_tone') {
-        quizResult['hair_tone'] = e.target.value;
-        console.log(quizResult);  
+        console.log(quizResult);   
     } else if(boxChecked === 'veins') {
         quizResult['veins'] = e.target.value;
         console.log(quizResult);  
@@ -109,8 +106,8 @@ function handleChange(e, boxChecked) {
  hairToneCool.addEventListener('change', (e) => handleChange(e, 'hairtone'));  
  tanYes.addEventListener('change', (e) => handleChange(e, 'tan'));
  tanNo.addEventListener('change', (e) => handleChange(e, 'tan'));
- palmsPeach.addEventListener('change', (e) => handleChange(e, 'palm'));
- palmsPink.addEventListener('change', (e) => handleChange(e, 'palm'));
+ palmsPeach.addEventListener('change', (e) => handleChange(e, 'palms'));
+ palmsPink.addEventListener('change', (e) => handleChange(e, 'palms'));
  eyesHazel.addEventListener('change', (e) => handleChange(e, 'eyes'));
  eyesLightblue.addEventListener('change', (e) => handleChange(e, 'eyes'));
  eyesDarkgreen.addEventListener('change', (e) => handleChange(e, 'eyes')); 
@@ -139,70 +136,73 @@ function handleChange(e, boxChecked) {
 
  //FUNCTION TO DETERMINE COLORS
  function checkAnswers() {
+    const name = document.getElementById('name').value
     if (
-      quizResult.hair === 'blonde' &&
-      quizResult.hairtone === 'cool' &&
-      quizResult.tan === 'no' &&
-      quizResult.palms === 'pink' &&
+      quizResult.hair === 'hairblonde' &&
+      quizResult.hairtone === 'haircool' &&
+      quizResult.tan === 'tanno' &&
+      quizResult.palms === 'palmspink' &&
       quizResult.eyes === 'lightblue' &&
       quizResult.jewelry === 'silver' &&
-      quizResult.sunburn === 'yes' &&
+      quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'blue_purple' &&
       quizResult.gemstone === 'light_green_emerald' &&
       quizResult.eyelashes === 'lightblonde' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'cool' 
+      quizResult.skintone === 'skincool' 
     ) {
-      alert('You are a SUMMER. Pastels look great on you!');
-    } else if (
-      quizResult.hair === 'auburn' &&
-      quizResult.hairtone === 'warm' &&
-      quizResult.tan === 'no' &&
-      quizResult.palms === 'pink' &&
+      alert(`Hello ${name}! You are a SUMMER. Pastels look great on you!`);
+      } else if (
+      quizResult.hair === 'hairauburn' &&
+      quizResult.hairtone === 'hairwarm' &&
+      quizResult.tan === 'tanno' &&
+      quizResult.palms === 'palmspink' &&
       quizResult.eyes === 'darkgreen' &&
       quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'yes' &&
+      quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'greenish' &&
       quizResult.gemstone === 'sapphire' &&
       quizResult.eyelashes === 'lightbrown' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'warm' 
+      quizResult.skintone === 'skinwarm' 
     ) {
-      alert('You are an AUTUMN. Fall and Earthtone colors look great on you!');
+      alert(`Hello, ${name}! You are an AUTUMN. Fall and Earthtone colors look great on you!`);
     } else if (
-      quizResult.hair === 'auburn' &&
-      quizResult.hairtone === 'warm' &&
-      quizResult.tan === 'yes' &&
-      quizResult.palms === 'peach' &&
+      quizResult.hair === 'hairauburn' &&
+      quizResult.hairtone === 'hairwarm' &&
+      quizResult.tan === 'tanyes' &&
+      quizResult.palms === 'palmspeach' &&
       quizResult.eyes === 'lightblue' &&
       quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'yes' &&
+      quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'greenish' &&
       quizResult.gemstone === 'blue_topaz' &&
       quizResult.eyelashes === 'lightbrown' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'cool' 
+      quizResult.skintone === 'skincool' 
     ) {
-      alert('You are a SPRING! Your wardrobe should be full of warm and bright colors.');
-    } else {
-      quizResult.hair === 'black' &&
-      quizResult.hairtone === 'cool' &&
-      quizResult.tan === 'yes' &&
-      quizResult.palms === 'peach' &&
+      alert(`Hello, ${name}! You are a SPRING. Your wardrobe should be full of warm and bright colors.`);
+    } else if (
+      quizResult.hair === 'hairblack' &&
+      quizResult.hairtone === 'haircool' &&
+      quizResult.tan === 'tanyes' &&
+      quizResult.palms === 'palmspeach' &&
       quizResult.eyes === 'deepbrown' &&
       quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'no' &&
+      quizResult.sunburn === 'sunburnno' &&
       quizResult.veins === 'greenish' &&
       quizResult.gemstone === 'ruby' &&
-      quizResult.eyelashes === 'black' &&
+      quizResult.eyelashes === 'lashesblack' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'cool' 
-    } {
-      alert('You are a WINTER! You look great in bright, bold, jewel-tone colors. ');
+      quizResult.skintone === 'skincool' 
+     )  {
+      alert(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.`);
+    } else {
+        alert('Your season is inconclusive-try again.')
     }
   };
 
@@ -212,45 +212,6 @@ function handleChange(e, boxChecked) {
 
 
 
-
-
-
-/* const obj = {
-    hair1: false,
-    hair2: false,
-    hair3: false,
-
-} */
-/* const button = document.getElementById('submitBtn')
-const hair1= document.getElementById('hair1');
-function changeHair() {
-    hair1 ? console.log(true) : console.log(false);
- }
- button.addEventListener('click', changeHair) */
-/* button.onclick = function seasonResult() {
-    const form = document.getElementById('form'); 
-    const hair1= document.getElementById('hair1');
-    const hair2 = document.getElementById('hair2');
-    const hair3 = document.getElementById('hair3');  
- 
-
-    if(obj.hair1 === true) {
-        alert("Your season is: SPRING");  
-    } else if 
-    (hair2.checked === true) {
-        alert("Your season is: FALL");
-    } else if 
-    (hair3.checked === true) {
-        alert("Your season is: WINTER");       
-        
-    } else
-        alert("You season must be: SUMMER")
-}  
-   /*  if(form === winter) {
-        alert("Your season is: WINTER")
-    }  *//* else if (form === summer) {
-        alert("Your season is: SUMMER")
-    } */
 
 
 
