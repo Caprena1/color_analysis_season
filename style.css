@@ -1,16 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-
     height: 100%;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(182, 157, 126);
+    background-color: rgb(210, 210, 165);
 }
 
 .sub-title {
@@ -19,7 +19,7 @@ body {
 }
 
 img {
-   margin-top: .5em;
+   margin-top: 2em;
    height: 40%;
    width: 75%;
    margin-left: 13%;
@@ -30,20 +30,26 @@ header {
     display: block;
     top: 0;
     left: 0;
-    height: 2%;
-    width: 100%;
-    background-color: olive;
     padding: 10px;
+    background:linear-gradient(to top,olive, rgb(210, 210, 165));
+    height: 4rem;
+    width: 100%;
 }
 
-.info {
+ .info {
     margin-top: 0;
-    padding-right: 10px;
+    margin-left: 55%;
     float: right;
-}
+ }
 
 h1 {
     margin-bottom: 1em;
+}
+ 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
 }
 
 nav a:visited,
@@ -53,11 +59,11 @@ nav a:link {
 }
 
 nav a:hover {
-    background-color: gray;
-    transition-duration: 0.2s;
+    background-color: rgb(58, 58, 19);
+    transition-duration: 0.4s;
     color: white;
-
-}
+    padding: 4px;
+} 
 
 nav > ul {
     display: inline;
@@ -67,9 +73,10 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     list-style: none;
-    margin: 0px 5px 0 5px;
+    margin: 0 5px 0 5px;
     padding-left: 10px;
 }
+
 
 main {
     display: flex;
@@ -80,14 +87,15 @@ main {
     min-height: 85%;
 }
 
-input, label {
+input {
     margin-bottom: 1em;
+    padding-left: 0.5em;
 }
 
 
 article {
     width:75%;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 form {
@@ -109,14 +117,21 @@ form {
     
 }
 
-footer {
-    padding: 15px;
-    background-color: olive;
-}
-
 @media only screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
     
-    
+    header {
+        height: 8rem;
+    }
+
+    .info {
+        margin-left: 35%;
+    }
+
     main {
         display:flex;
         flex-direction: column;
@@ -125,16 +140,13 @@ footer {
     }
 
     h1 {
-        margin-bottom: .50rem;
+        margin-bottom: 0.5rem;
         margin-top: 1rem;
     }
 
     input, label {
         margin-bottom: .75rem;
-    }
 
-    .info {
-        margin-top: 1rem;
     }
 
     form {
