@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Colors-What Season Am I?</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="colors.html">Color Charts</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">ColorPalatte</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
-
             <div class="info">
                 <label for="name">Full Name</label>
-                <input type="text" id= "name" name="name">
+                <input type="text" id= "name" placeholder="name required">
                 
                 <label for="mailaddress">Email Address</label><span class="span"></span>
                 <input type="text" id= "mailaddress" placeholder="me@example.com">
@@ -40,9 +46,9 @@
                 </p>
             </div>
             <section>
-                <form action="seasonsbycaprena.html" id="boxChecked">
+                <form action="seasonsbycaprena.html" id="form">
                     <div class="container1">
-                        <div>
+                        <div> 
                             <h1>What color is your hair?</h1>
                             <input type="radio" id="hairblonde" name="hair" value="hairblonde">
                             <label for="hairblonde">Blonde, Brunette or Strawberry Blonde</label>
@@ -178,17 +184,9 @@
         </article>
     </main>
     <div><button class="button" id="submitBtn">Submit</button></div>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="colors.html">Color Charts</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="colors.js"></script>
-   
+    
+   <script src="colors.js"></script> 
+    
     
 </body>
 </html>

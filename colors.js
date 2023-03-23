@@ -13,27 +13,32 @@ const eyesHazel = document.getElementById('hazel');
 const eyesLightblue = document.getElementById('lightblue');  
 const eyesDarkgreen = document.getElementById('darkgreen');  
 const eyesDeepbrown = document.getElementById('deepbrown');  
-const jewelryGold = document.getElementById('gold')
-const jewelrySilver = document.getElementById('silver')
-const sunburnYes = document.getElementById('sunburnyes')
-const sunburnNo = document.getElementById('sunburnno')
-const veinsGreen = document.getElementById('greenish')
-const veinsBluePurple = document.getElementById('blue_purple')
-const gemstoneEmerald = document.getElementById('light_green_emerald')
-const gemstoneTopaz = document.getElementById('blue_topaz')
-const gemstoneRuby = document.getElementById('ruby')
-const gemstoneSapphire = document.getElementById('sapphire')
-const lashesBlonde = document.getElementById('lightblonde')
-const lashesLbrown = document.getElementById('lightbrown')
-const lashesDbrown = document.getElementById('darkbrown')
-const lashesBlack = document.getElementById('lashesblack')
-const lipPeachy = document.getElementById('lippeachy')
-const lipPink = document.getElementById('pinkish')
-const cheekPeach = document.getElementById('peach')
-const cheekPink = document.getElementById('rosypink')
+const jewelryGold = document.getElementById('gold');
+const jewelrySilver = document.getElementById('silver');
+const sunburnYes = document.getElementById('sunburnyes');
+const sunburnNo = document.getElementById('sunburnno');
+const veinsGreen = document.getElementById('greenish');
+const veinsBluePurple = document.getElementById('blue_purple');
+const gemstoneEmerald = document.getElementById('light_green_emerald');
+const gemstoneTopaz = document.getElementById('blue_topaz');
+const gemstoneRuby = document.getElementById('ruby');
+const gemstoneSapphire = document.getElementById('sapphire');
+const lashesBlonde = document.getElementById('lightblonde');
+const lashesLbrown = document.getElementById('lightbrown');
+const lashesDbrown = document.getElementById('darkbrown');
+const lashesBlack = document.getElementById('lashesblack');
+const lipPeachy = document.getElementById('lippeachy');
+const lipPink = document.getElementById('pinkish');
+const cheekPeach = document.getElementById('peach');
+const cheekPink = document.getElementById('rosypink');
 const cheekNoColor = document.getElementById('nocolor')
-const skintoneWarm = document.getElementById('skinwarm')
-const skintoneCool = document.getElementById('skincool')
+const skintoneWarm = document.getElementById('skinwarm');
+const skintoneCool = document.getElementById('skincool');
+const form = document.getElementById('form');
+//hamburger
+/* const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
+ */
 
 
 const quizResult = {
@@ -152,7 +157,9 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
     ) {
-      alert(`Hello ${name}! You are a SUMMER. Pastels look great on you!🌸`);
+      if(window.confirm(`Hello ${name}! You are a SUMMER. Pastels look great on you!🌸`)) {
+        form.reset();
+      };
       } else if (
       quizResult.hair === 'hairauburn' &&
       quizResult.hairtone === 'hairwarm' &&
@@ -168,7 +175,9 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skinwarm' 
     ) {
-      alert(`Hello, ${name}! You are an AUTUMN. Fall and Earthtone colors look great on you!`);
+      if(window.confirm(`Hello, ${name}! You are an AUTUMN. Fall and Earthtone colors look great on you!`)) {
+        form.reset();
+      };
     } else if (
       quizResult.hair === 'hairauburn' &&
       quizResult.hairtone === 'hairwarm' &&
@@ -184,7 +193,9 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
     ) {
-      alert(`Hello, ${name}! You are a SPRING. Your wardrobe should be full of warm and bright colors.`);
+      if(window.confirm(`Hello, ${name}! You are a SPRING. Your wardrobe should be full of warm and bright colors.`)) {
+        form.reset();
+      };
     } else if (
       quizResult.hair === 'hairblack' &&
       quizResult.hairtone === 'haircool' &&
@@ -200,13 +211,32 @@ function handleChange(e, boxChecked) {
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
      )  {
-      alert(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.🟣 🔵 🔴 🟢`);
+        if(window.confirm(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.🟣 🔵 🔴 🟢`)) {
+            form.reset();
+        };
     } else {
-        alert('Your season is inconclusive-try again.')
+        if(window.confirm("Your season is inconclusive-try again.")) {
+            form.reset();
+        }
     }
   };
 
   submitButton.addEventListener('click', checkAnswers)
+  
+  /* hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  })
+
+  document.querySelector(".nav-link").forEach(n => 
+    n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    })) */
+  
+
+
+
   
 
 
