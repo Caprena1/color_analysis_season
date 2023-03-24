@@ -151,7 +151,7 @@ function handleChange(e, boxChecked) {
       quizResult.jewelry === 'silver' &&
       quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'blue_purple' &&
-      quizResult.gemstone === 'light_green_emerald' &&
+      quizResult.gemstone === 'light_green_emerald' || 'blue topaz' &&
       quizResult.eyelashes === 'lightblonde' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
@@ -163,14 +163,14 @@ function handleChange(e, boxChecked) {
       } else if (
       quizResult.hair === 'hairauburn' &&
       quizResult.hairtone === 'hairwarm' &&
-      quizResult.tan === 'tanno' &&
+      quizResult.tan === 'tanyes' &&
       quizResult.palms === 'palmspink' &&
       quizResult.eyes === 'darkgreen' &&
       quizResult.jewelry === 'gold' &&
       quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'greenish' &&
-      quizResult.gemstone === 'sapphire' &&
-      quizResult.eyelashes === 'lightbrown' &&
+      quizResult.gemstone === 'sapphire' || 'ruby' &&
+      quizResult.eyelashes === 'lightbrown' || 'dark brown' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skinwarm' 
