@@ -19,10 +19,11 @@ const sunburnYes = document.getElementById('sunburnyes');
 const sunburnNo = document.getElementById('sunburnno');
 const veinsGreen = document.getElementById('greenish');
 const veinsBluePurple = document.getElementById('blue_purple');
-const gemstoneEmerald = document.getElementById('light_green_emerald');
+const gemstoneEmerald = document.getElementById('emerald');
 const gemstoneTopaz = document.getElementById('blue_topaz');
 const gemstoneRuby = document.getElementById('ruby');
 const gemstoneSapphire = document.getElementById('sapphire');
+const gemstoneEarthtone = document.getElementById('earthtones');
 const lashesBlonde = document.getElementById('lightblonde');
 const lashesLbrown = document.getElementById('lightbrown');
 const lashesDbrown = document.getElementById('darkbrown');
@@ -35,10 +36,6 @@ const cheekNoColor = document.getElementById('nocolor')
 const skintoneWarm = document.getElementById('skinwarm');
 const skintoneCool = document.getElementById('skincool');
 const form = document.getElementById('form');
-//hamburger
-/* const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
- */
 
 
 const quizResult = {
@@ -127,6 +124,7 @@ function handleChange(e, boxChecked) {
  gemstoneTopaz.addEventListener('change', (e) => handleChange(e, 'gemstone'));
  gemstoneRuby.addEventListener('change', (e) => handleChange(e, 'gemstone'));
  gemstoneSapphire.addEventListener('change', (e) => handleChange(e, 'gemstone'));
+ gemstoneEarthtone.addEventListener('change', (e) => handleChange(e, 'gemstone'));
  lashesBlonde.addEventListener('change', (e) => handleChange(e, 'eyelashes'));
  lashesLbrown.addEventListener('change', (e) => handleChange(e, 'eyelashes'));
  lashesDbrown.addEventListener('change', (e) => handleChange(e, 'eyelashes'));
@@ -151,67 +149,67 @@ function handleChange(e, boxChecked) {
       quizResult.jewelry === 'silver' &&
       quizResult.sunburn === 'sunburnyes' &&
       quizResult.veins === 'blue_purple' &&
-      quizResult.gemstone === 'light_green_emerald' || 'blue topaz' &&
-      quizResult.eyelashes === 'lightblonde' &&
+      quizResult.gemstone === 'emerald' /* || 'blue_topaz' || 'ruby' */ &&
+      quizResult.eyelashes === 'lightblonde' /* || 'lightbrown' */ &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
     ) {
-      if(window.confirm(`Hello ${name}! You are a SUMMER. Pastels look great on you!🌸`)) {
+      if(window.confirm(`Hello ${name}! You are a SUMMER. Pastels look great on you!🌸`)) { 
         form.reset();
       };
       } else if (
-      quizResult.hair === 'hairauburn' &&
-      quizResult.hairtone === 'hairwarm' &&
-      quizResult.tan === 'tanyes' &&
-      quizResult.palms === 'palmspink' &&
-      quizResult.eyes === 'darkgreen' &&
-      quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'sunburnyes' &&
-      quizResult.veins === 'greenish' &&
-      quizResult.gemstone === 'sapphire' || 'ruby' &&
-      quizResult.eyelashes === 'lightbrown' || 'dark brown' &&
-      quizResult.inside_lip === 'pinkish' &&
-      quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'skinwarm' 
-    ) {
-      if(window.confirm(`Hello, ${name}! You are an AUTUMN. Fall and Earthtone colors look great on you!`)) {
-        form.reset();
-      };
-    } else if (
-      quizResult.hair === 'hairauburn' &&
+      quizResult.hair === 'hairauburn' || 'hairblack' &&
       quizResult.hairtone === 'hairwarm' &&
       quizResult.tan === 'tanyes' &&
       quizResult.palms === 'palmspeach' &&
-      quizResult.eyes === 'lightblue' &&
+      quizResult.eyes === 'darkgreen' || 'deepbrown' &&
       quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'sunburnyes' &&
+      quizResult.sunburn === 'sunburnno' &&
+      quizResult.veins === 'greenish' &&
+      quizResult.gemstone === 'earthtones' &&
+      quizResult.eyelashes === 'lashesblack' || 'lashesdarkbrown' &&
+      quizResult.inside_lip === 'lippeachy' &&
+      quizResult.cheeks === 'peach' || 'nocolor' &&
+      quizResult.skintone === 'skinwarm' 
+    ) {
+      if(window.confirm(`Hello, ${name}! You are an AUTUMN. Fall and Earthtone colors look great on you!🍁`)) {
+        form.reset();
+      };
+    } else if (
+      quizResult.hair === 'hairblonde' || 'hairauburn' &&
+      quizResult.hairtone === 'hairwarm' &&
+      quizResult.tan === 'tanyes' &&
+      quizResult.palms === 'palmspeach' &&
+      quizResult.eyes === 'lightblue' || 'hazel' &&
+      quizResult.jewelry === 'gold' &&
+      quizResult.sunburn === 'sunburnno' &&
       quizResult.veins === 'greenish' &&
       quizResult.gemstone === 'blue_topaz' &&
-      quizResult.eyelashes === 'lightbrown' &&
-      quizResult.inside_lip === 'pinkish' &&
-      quizResult.cheeks === 'rosypink' &&
-      quizResult.skintone === 'skincool' 
+      quizResult.eyelashes === 'lightbrown' || 'lightblonde' &&
+      quizResult.inside_lip === 'lippeachy' &&
+      quizResult.cheeks === 'peach' || 'nocolor' &&
+      quizResult.skintone === 'skinwarm' 
     ) {
-      if(window.confirm(`Hello, ${name}! You are a SPRING. Your wardrobe should be full of warm and bright colors.`)) {
+      if(window.confirm(`Hello, ${name}! You are a SPRING. Your wardrobe should be full of warm and bright colors.🌼🌿`)) {
         form.reset();
       };
     } else if (
       quizResult.hair === 'hairblack' &&
       quizResult.hairtone === 'haircool' &&
-      quizResult.tan === 'tanyes' &&
-      quizResult.palms === 'palmspeach' &&
+      quizResult.tan === 'tanno' &&
+      quizResult.palms === 'palmspink' &&
       quizResult.eyes === 'deepbrown' &&
-      quizResult.jewelry === 'gold' &&
-      quizResult.sunburn === 'sunburnno' &&
-      quizResult.veins === 'greenish' &&
-      quizResult.gemstone === 'ruby' &&
-      quizResult.eyelashes === 'lashesblack' &&
+      quizResult.jewelry === 'silver' &&
+      quizResult.sunburn === 'sunburnyes' &&
+      quizResult.veins === 'blue_purple' &&
+      quizResult.gemstone === 'emerald' || 'blue topaz' || 'ruby' || 'sapphire' &&
+      quizResult.eyelashes === 'lashesblack' || 'darkbrown' &&
       quizResult.inside_lip === 'pinkish' &&
       quizResult.cheeks === 'rosypink' &&
       quizResult.skintone === 'skincool' 
      )  {
-        if(window.confirm(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors.🟣 🔵 🔴 🟢`)) {
+        if(window.confirm(`Hello, ${name}! You are a WINTER! You look great in bright, bold, jewel-tone colors. ❄️`)) {
             form.reset();
         };
     } else {
@@ -222,26 +220,8 @@ function handleChange(e, boxChecked) {
   };
 
   submitButton.addEventListener('click', checkAnswers)
-  
-  /* hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  })
-
-  document.querySelector(".nav-link").forEach(n => 
-    n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    })) */
-  
-
-
-
-  
-
-
-
-
-
-
-
+  /* REFERENCES: */
+  /* https://www.quizony.com/what-color-season-am-i/7.html*/
+ /* https://www.jewelryshoppingguide.com/match-jewelry-skin-tone-tips/ */
+ /* https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiS_tSQw_X9AhUpk2oFHSKEBE4QFnoECBMQAw&url=https%3A%2F%2Fanuschkarees.com%2Fblog%2F2013%2F09%2F24%2Fcolour-analysis-part-i-finding-your-type&usg=AOvVaw04jd8QDC0UQBeXysG2Vd_E */
+ /* Warm: golden, peach, or yellow undertones and Cool: bluish, red, or pink undertones */
