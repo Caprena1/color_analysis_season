@@ -32,7 +32,7 @@ header {
     left: 0;
     padding: 10px;
     background:linear-gradient(to top,olive, rgb(210, 210, 165));
-    height: 4rem;
+    height: 2rem;
     width: 100%;
 }
 
@@ -77,6 +77,30 @@ nav > ul > li {
     padding-left: 10px;
 }
 
+/* .toggle {
+    order: 1;
+    font-size: 1.5rem;
+  }
+  
+  .topnav-link {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  
+  .active .topnav-link {
+    display: block;
+  }
+  
+  .topnav-link a {
+    color: white;
+    text-decoration: none;
+  }
+  .fa-bars {
+    color: white;
+  }
+ */
 
 main {
     display: flex;
@@ -114,29 +138,24 @@ form {
     border: black 3px solid;
     margin-bottom: 1em;
     margin-left: 45%;
-    
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav {
-        display: flex;
-        flex-direction: row;
-        gap: 7px;
-    }
-    
-    header {
-        height: 8rem;
-    }
-
-    .info {
-        margin-left: 35%;
-    }
-
+@media screen and (min-width: 480px) {
     main {
         display:flex;
         flex-direction: column;
         flex: 1;
-        
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    header {
+        height: 7rem;
     }
 
     h1 {
@@ -144,17 +163,33 @@ form {
         margin-top: 1rem;
     }
 
+    .info {
+        margin-left: 40%;
+    } 
+
     input, label {
         margin-bottom: .75rem;
 
     }
 
-    form {
-        display:flex;
-        flex-direction: column;
-        flex: 1;
-       
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
     }
- 
+    
+     main {
+        display:flex;
+        flex-direction: row;
+        flex: 2;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex: 2;
+    }
 }
 

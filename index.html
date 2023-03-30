@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Colors-What Season Am I?</title>
 </head>
@@ -12,15 +13,10 @@
     <header>
         <nav class="nav">
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">ColorPalatte</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ColorPalatte</a></li>
+                <li><a href="#">Contact</a></li>
+
             </ul>
             <div class="info">
                 <label for="name">Full Name</label>
@@ -47,7 +43,7 @@
                 </p>
             </div>
             <section>
-                <form action="seasonsbycaprena.html" id="form">
+                <form action="seasonsbycaprena.html" id="form" >
                     <div class="container1">
                         <div> 
                             <h1>What color is your hair?</h1>
@@ -99,49 +95,6 @@
                             <label for="deepbrown">Deep Brown, Black, or Gray</label>
                         </div>
                         <div>
-                            <h1>Which jewelry looks best on you?</h1>
-                            <input type="radio" id="gold" name="jewelry" value="gold">
-                            <label for="gold">Gold</label>
-                            <br>
-                            <input type="radio" id="silver" name="jewelry" value="silver">
-                            <label for="silver">Silver</label>
-                        </div>
-                        <div>
-                            <h1>Do you sunburn easily?</h1>
-                            <input type="radio" id="sunburnyes" name="sunburn" value="sunburnyes">
-                            <label for="sunburnyes">Yes</label>
-                            <br>
-                            <input type="radio" id="sunburnno" name="sunburn" value="sunburnno">
-                            <label for="sunburnno">No</label>
-                        </div>
-                    </div>  
-                    <div class="container2">   
-                        <div>
-                            <h1>What color are your veins?</h1>
-                            <input type="radio" id="greenish" name="veins" value="greenish">
-                            <label for="greenish">Greenish</label>
-                            <br>
-                            <input type="radio" id="blue_purple" name="veins" value="blue_purple">
-                            <label for="blue_purple">Blue or Purple</label>
-                        </div>
-                        <div>
-                            <h1>What gemstone would suit you best?</h1>
-                            <input type="radio" id="emerald" name="gemstone" value="emerald">
-                            <label for="emerald">Emerald</label>
-                            <br>
-                            <input type="radio" id="blue_topaz" name="gemstone" value="blue_topaz">
-                            <label for="blue_topaz">Blue Topaz or Turquoise</label>
-                            <br>
-                            <input type="radio" id="ruby" name="gemstone" value="ruby">
-                            <label for="ruby">Ruby</label>
-                            <br>
-                            <input type="radio" id="sapphire" name="gemstone" value="sapphire">
-                            <label for="sapphire">Sapphire or Tanzanite</label>
-                            <br>
-                            <input type="radio" id="earthtones" name="gemstone" value="earthtones">
-                            <label for="earthtones">Earthtones - Citrine, Alexandrite, Morganite or Agate</label>
-                        </div>
-                        <div>
                             <h1>What color are your eyelashes?</h1>
                             <input type="radio" id="lightblonde" name="eyelashes" value="lightblonde">
                             <label for="lightblonde">Light Blonde, Light Red or Light Honey Brown</label>
@@ -155,13 +108,40 @@
                             <input type="radio" id="lashesblack" name="eyelashes" value="lashesblack">
                             <label for="lashesblack">Black</label>
                         </div>
+                    </div>  
+                    <div class="container2">   
                         <div>
-                            <h1>What color is the inside of your lip?</h1>
-                            <input type="radio" id="lippeachy" name="inside_lip" value="lippeachy">
-                            <label for="lippeachy">Peachy</label>
+                            <h1>Do you sunburn easily?</h1>
+                            <input type="radio" id="sunburnyes" name="sunburn" value="sunburnyes">
+                            <label for="sunburnyes">Yes</label>
                             <br>
-                            <input type="radio" id="pinkish" name="inside_lip" value="pinkish">
-                            <label for="pinkish">Pinkish or Red</label>
+                            <input type="radio" id="sunburnno" name="sunburn" value="sunburnno">
+                            <label for="sunburnno">No</label>
+                        </div>
+                        <div>
+                            <h1>What color are your veins?</h1>
+                            <input type="radio" id="greenish" name="veins" value="greenish">
+                            <label for="greenish">Greenish</label>
+                            <br>
+                            <input type="radio" id="blue_purple" name="veins" value="blue_purple">
+                            <label for="blue_purple">Blue or Purple</label>
+                        </div>
+                        <div>
+                            <h1>What gemstone would suit you best?</h1>
+                            <input type="radio" id="emerald" name="gemstone" value="emerald">
+                            <label for="emerald">Emerald, Ruby, Sapphire, or Blue Topaz</label>
+                           <!--  <br>
+                            <input type="radio" id="blue_topaz" name="gemstone" value="blue_topaz">
+                            <label for="blue_topaz">Blue Topaz or Turquoise</label>
+                            <br>
+                            <input type="radio" id="ruby" name="gemstone" value="ruby">
+                            <label for="ruby">Ruby</label>
+                            <br>
+                            <input type="radio" id="sapphire" name="gemstone" value="sapphire">
+                            <label for="sapphire">Sapphire or Tanzanite</label> -->
+                            <br>
+                            <input type="radio" id="earthtones" name="gemstone" value="earthtones">
+                            <label for="earthtones">Earthtones - Citrine, Alexandrite, Morganite or Agate</label>
                         </div>
                         <div>
                             <h1>What color are your cheeks when you blush?</h1>
@@ -173,6 +153,23 @@
                             <br>
                             <input type="radio" id="nocolor" name="cheeks" value="nocolor">
                             <label for="nocolor">Neutral or Same Color as Skin Tone</label>
+                        </div>
+                       
+                        <div>
+                            <h1>What color is the inside of your lip?</h1>
+                            <input type="radio" id="lippeachy" name="inside_lip" value="lippeachy">
+                            <label for="lippeachy">Peachy</label>
+                            <br>
+                            <input type="radio" id="pinkish" name="inside_lip" value="pinkish">
+                            <label for="pinkish">Pinkish or Red</label>
+                        </div>
+                        <div>
+                            <h1>Which jewelry looks best on you?</h1>
+                            <input type="radio" id="gold" name="jewelry" value="gold">
+                            <label for="gold">Gold</label>
+                            <br>
+                            <input type="radio" id="silver" name="jewelry" value="silver">
+                            <label for="silver">Silver</label>
                         </div>
                         <div>
                             <h1>Which do you think you are:</h1>
@@ -188,8 +185,7 @@
         </article>
     </main>
     <div><button class="button" id="submitBtn">Submit</button></div>
-    
-   <script src="colors.js"></script> 
+    <script src="colors.js"></script> 
     
     
 </body>
