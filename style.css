@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
 }
@@ -26,13 +27,33 @@ img {
     
 }
 
+#seasons {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 4rem;
+    margin-left: 60%;
+    padding-bottom: 3rem;
+}
+
+.seasonImg {
+    width: 10rem;
+    height: 6rem;
+    margin-left: 0.1rem;
+      
+} 
+
+.button {
+    font-style: italic;
+    margin-left: 1%;
+}
+
 header {
     display: block;
     top: 0;
     left: 0;
     padding: 10px;
     background:linear-gradient(to top,olive, rgb(210, 210, 165));
-    height: 2rem;
     width: 100%;
 }
 
@@ -45,11 +66,23 @@ header {
 h1 {
     margin-bottom: 1em;
 }
- 
+
+.fa-bars:before, .fa-navicon:before {
+    font-size: 20px;
+    
+}
+
+.nav #menu {
+    display: none;
+   
+    }
+
 .nav {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
 nav a:visited,
@@ -77,31 +110,6 @@ nav > ul > li {
     padding-left: 10px;
 }
 
-/* .toggle {
-    order: 1;
-    font-size: 1.5rem;
-  }
-  
-  .topnav-link {
-    order: 2;
-    width: 100%;
-    text-align: center;
-    display: none;
-  }
-  
-  .active .topnav-link {
-    display: block;
-  }
-  
-  .topnav-link a {
-    color: white;
-    text-decoration: none;
-  }
-  .fa-bars {
-    color: white;
-  }
- */
-
 main {
     display: flex;
     flex-direction: row;
@@ -111,9 +119,10 @@ main {
     min-height: 85%;
 }
 
-input {
+label, input {
     margin-bottom: 1em;
     padding-left: 0.5em;
+    font-size: 20px;
 }
 
 
@@ -127,11 +136,11 @@ form {
     flex-direction: row;
     justify-content: space-between;
     flex: 2;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: 40%;
 }
 
-.button {
+.button2 {
     padding: .5em 1em .5em 1em;
     font-size: large;
     font-weight:bolder;
@@ -140,6 +149,23 @@ form {
     margin-left: 45%;
     cursor: pointer;
 }
+
+.footer {
+    color: black;
+    background:linear-gradient(to bottom,olive, rgb(210, 210, 165));;
+    height: 2rem;
+    padding: 2rem;
+  }
+
+@media (min-width: 40rem) {
+    .nav {
+      display: none;
+    }
+    #menu {
+      display: block;
+    }
+    
+  }  
 
 @media screen and (min-width: 480px) {
     main {
@@ -164,11 +190,13 @@ form {
     }
 
     .info {
-        margin-left: 40%;
+        margin-left: 38%;
+        font-size: 15px;
     } 
 
-    input, label {
+    a, .fa-bars:before, .fa-navicon:before, input, label {
         margin-bottom: .75rem;
+        font-size: 15px;
 
     }
 

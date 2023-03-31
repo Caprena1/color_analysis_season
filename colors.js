@@ -1,5 +1,6 @@
 //INPUTS
 const submitButton = document.getElementById('submitBtn');
+
 const hairBlonde = document.getElementById('hairblonde');
 const hairAuburn = document.getElementById('hairauburn');
 const hairBlack = document.getElementById('hairblack');  
@@ -34,8 +35,6 @@ const skintoneWarm = document.getElementById('skinwarm');
 const skintoneCool = document.getElementById('skincool'); 
 const form = document.getElementById('form');
 
-
-
 const quizResult = {
     hair: "",
     hairtone: "",
@@ -51,6 +50,24 @@ const quizResult = {
     cheeks: "",
     skintone: "", 
 }; 
+
+function hamburgerBtn() {
+    const toggleMenu = document.getElementById('menu');
+    if (toggleMenu.style.display === "none") {
+        toggleMenu.style.display = "block";
+    } else {
+        toggleMenu.style.display = "none";
+    }
+}
+
+function fourSeasons() {
+    const seasonPic = document.getElementById("seasons");
+    if (seasonPic.style.display === "none") {
+      seasonPic.style.display = "block";
+    } else {
+      seasonPic.style.display = "none";
+    }
+  }
 
 
 function handleChange(e, boxChecked) {
@@ -214,8 +231,9 @@ function checkAnswers() {
     }
 };
     
-  submitButton.addEventListener('click', checkAnswers)
-  
+submitButton.addEventListener('click', checkAnswers);
+
+
   /* REFERENCES: */
   /* https://www.quizony.com/what-color-season-am-i/7.html*/
  /* https://www.jewelryshoppingguide.com/match-jewelry-skin-tone-tips/ */
