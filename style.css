@@ -168,6 +168,7 @@ form {
   }  
 
 @media screen and (min-width: 480px) {
+
     main {
         display:flex;
         flex-direction: column;
@@ -180,9 +181,6 @@ form {
         flex: 1;
     }
 
-    header {
-        height: 7rem;
-    }
 
     h1 {
         margin-bottom: 0.5rem;
@@ -197,6 +195,7 @@ form {
     a, .fa-bars:before, .fa-navicon:before, input, label {
         margin-bottom: .75rem;
         font-size: 15px;
+        
 
     }
 

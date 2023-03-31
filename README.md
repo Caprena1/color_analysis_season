@@ -17,6 +17,9 @@ Implement a linear gradient in the header and footer
 Added a transition on hover with a transition-duration of 0.4s
 Added a hide/show element with an image of the seasons
 
+## Deployed Website
+https://caprena1.github.io/color_analysis_season/
+
 
 
 
