@@ -157,6 +157,7 @@ form {
     background:linear-gradient(to bottom,olive, rgb(210, 210, 165));;
     height: 2rem;
     padding: 2rem;
+    
   }
 
 @media (min-width: 40rem) {
@@ -201,11 +202,7 @@ form {
         margin-bottom: .75rem;
         font-size: 15px;
     }
-
-    footer {
-        width: 100%;
-    }
-
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -224,10 +221,9 @@ form {
     form {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         flex: 2;
     }
-    footer {
-        width: 100%;
-    }
+   
 }
 
