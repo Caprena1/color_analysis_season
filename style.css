@@ -54,7 +54,6 @@ header {
     left: 0;
     padding: 10px;
     background:linear-gradient(to top,olive, rgb(210, 210, 165));
-   /*  width: 100%; */
     width: 550px;
     height: 100px;
 }
@@ -136,7 +135,7 @@ article {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex: 1;
     margin-top: 6rem;
     margin-left: 40%;
@@ -224,6 +223,8 @@ form {
         justify-content: space-between;
         flex: 2;
     }
+
+    
    
 }
 
